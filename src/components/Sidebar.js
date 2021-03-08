@@ -328,7 +328,7 @@ const Sidebar = ({ classes, staticContext, location, ...rest }) => {
       <Brand component={NavLink} to="/" button>
         <BrandIcon />{" "}
         <Box ml={1}>
-          Material App <BrandChip label="PRO" />
+          Material App
         </Box>
       </Brand>
       <Scrollbar>
@@ -385,7 +385,7 @@ const Sidebar = ({ classes, staticContext, location, ...rest }) => {
           </Items>
         </List>
       </Scrollbar>
-      <SidebarFooter>
+      {/*<SidebarFooter>
         <Grid container spacing={2}>
           <Grid item>
             <SidebarFooterBadge
@@ -409,7 +409,7 @@ const Sidebar = ({ classes, staticContext, location, ...rest }) => {
             </SidebarFooterSubText>
           </Grid>
         </Grid>
-      </SidebarFooter>
+      </SidebarFooter>*/}
     </Drawer>
   );
 };

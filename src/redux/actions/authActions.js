@@ -21,7 +21,6 @@ export function signIn(credentials) {
       })
       .catch((error) => {
         dispatch({ type: types.AUTH_SIGN_IN_FAILURE });
-        // console.log(error)
         throw error;
       });
   };

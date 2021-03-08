@@ -27,8 +27,8 @@ function App() {
   return (
     <React.Fragment>
       <Helmet
-        titleTemplate=" "
-        defaultTitle=" "
+        titleTemplate=""
+        defaultTitle=""
       />
       <StylesProvider jss={jss}>
         <MuiPickersUtilsProvider utils={DateFnsUtils}>

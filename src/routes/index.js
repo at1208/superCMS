@@ -58,6 +58,14 @@ const dashboardsRoutes = {
   component: Default
 };
 
+const employeeRoutes = {
+  id:"Employees",
+  path: "/employees",
+  icon: <Layout />,
+  children:null,
+  component:Profile,
+}
+
 const profileRoutes = {
   id:"Profile",
   path: "/profile",
@@ -155,6 +163,7 @@ export const dashboardLayoutRoutes = [
   dashboardsRoutes,
   profileRoutes,
   settingRoutes,
+  employeeRoutes,
   chatsRoutes,
   domainRoutes,
   projectsRoutes,
@@ -170,10 +179,10 @@ export const protectedRoutes = [protectedPageRoutes];
 // Routes visible in the sidebar
 export const sidebarRoutes = [
   dashboardsRoutes,
-  // chatsRoutes,
-  domainRoutes,
-
+  employeeRoutes,
   projectsRoutes,
   tasksRoutes,
+  // chatsRoutes,
+  // domainRoutes,
   settingRoutes,
 ];
